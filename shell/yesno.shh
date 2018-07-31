@@ -1,0 +1,10 @@
+#! /bin/bash
+
+read -p "Enter the status\n" yn
+
+if [ "$yn" != "${yn#[Yn]}" ]
+then
+        echo YES
+else
+        echo NO
+fi
